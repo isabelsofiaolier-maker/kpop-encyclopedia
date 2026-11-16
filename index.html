@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <meta charset="UTF-8">
+      <title>K-POP ENCYCLOPEDIA</title>
+
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+      <style>
+          
+          body { 
+              background-color: skyblue;
+              font-family: "Times New Roman", Times, serif;
+              margin: 0;
+              padding-top: 65px;
+              padding-left: 20px;
+              padding-right: 20px;
+              padding-bottom: 20px;
+           }
+
+           h1 {
+               color: lightpink;
+               margin-top: 0;
+               margin-bottom: 10px;
+           }
+
+           h2 {
+               color: darkmagenta;
+               font-family: Arial, Helvetica, sans-serif;
+               margin-top: 0;
+               margin-bottom: 10px;
+           }
+
+           .grupo {
+               font-size: 2em;
+           }
+
+           #titulo {
+               font-family: Arial, Helvetica, sans-serif;
+           }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: darkmagenta;
+            width: 100%;
+            height: 45px;
+            border-bottom: 3px solid deeppink;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin-top: 10px;
+            margin-bottom: 0;
+            margin-left: 15px;
+            margin-right: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        nav ul li a:hover {
+            background-color: lightpink;
+            color: darkmagenta;
+        }
+
+        header {
+            position: relative;
+            background-color: darkmagenta;
+            width: 92%;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            border-width: 3px;
+            border-style: solid;
+            border-color: deeppink;
+        }
+
+        #etiqueta-web {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background-color: lightpink;
+            color: darkmagenta;
+            padding: 6px;
+            border: 2px solid white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+
+        #presentacion {
+            color: white;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        #contenedor-principal {
+            position: relative;
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+        }
+
+        section {
+            position: relative;
+            width: 66%;
+        }
+
+        article {
+            position: relative;
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: darkmagenta;
+        }
+
+        aside {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 27%;
+            background-color: lightpink;
+            padding: 15px;
+            border-width: 3px;
+            border-style: solid;
+            border-color: darkmagenta;
+        }
+
+        aside img {
+            display: block;
+            width: 180px;
+            height: 180px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 3px solid darkmagenta;
+            padding: 4px;
+            background-color: white;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        th, td {
+            border: 2px solid darkmagenta;
+            padding: 10px;
+        }
+
+        th {
+            background-color: darkmagenta;
+            color: white;
+        }
+
+        td {
+            background-color: lightpink;
+        }
+
+        p {
+            text-align: justify;
+            line-height: 1.5;
+        }
+
+        h1, h2 {
+            text-align: left;
+        }
+
+        a {
+            color: darkmagenta;
+            text-decoration: underline;
+        }
+
+        h2.grupo {
+            color: deeppink;
+            font-size: 2em;
+        }
+
+        p.destacado {
+            color: darkmagenta;
+            font-size: 18px;
+        }
+
+        article ul li {
+            color: darkmagenta;
+            font-size: 17px;
+            margin-bottom: 8px;
+        }
+
+        a:hover {
+            color: deeppink;
+        }
+
+        footer {
+            position: static;
+            background-color: darkmagenta;
+            color: white;
+            width: 92%;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            border: 3px solid deeppink;
+        }
+
+        footer p {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+      </style>
+
+</head>
+
+
+<body>
+
+<nav>
+<ul>
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#grupos">Grupos</a></li>
+<li><a href="#tabla">Tabla</a></li>
+<li><a href="#bts">BTS</a></li>
+<li><a href="#blackpink">BLACKPINK</a></li>
+<li><a href="#twice">TWICE</a></li>
+<li><a href="#enhypen">ENHYPEN</a></li>
+<li><a href="#straykids">STRAY KIDS</a></li>
+</ul>
+</nav>
+
+<header id="inicio">
+
+    <div id="etiqueta-web">Enciclopedia Musical <span class="badge bg-dark">v2.0</span></div>
+
+    <h1 id="titulo">K-POP ENCYCLOPEDIA</h1>
+
+    <p id="presentacion">
+        Bienvenidos a K-POP ENCYCLOPEDIA, un sitio web dedicado al mundo del K-pop.
+        En esta enciclopedia podrás encontrar información sobre algunos de tus grupos favoritos 
+        de K-pop y sus integrantes.
+    </p>
+
+    <div class="alert alert-light" role="alert">
+        Explora la historia, el debut y los integrantes de los 5 grupos más populares del K-pop.
+    </div>
+
+</header>
+
+
+<div id="contenedor-principal">
+
+<section>
+
+
+    <article>
+
+        <h2>¿Qué es el K-pop y cuándo se originó?</h2>
+
+        <p>
+            El K-pop es la música popular originaria de Corea del Sur. Es una mezcla musical que combina pop, hip-hop, R&B, rock y música electrónica. 
+            El kpop moderno se creó oficialmente en 1992, y el hito que marcó el nacimiento de este género fue la aparición en televisión del grupo Seo Taiji and Boys con su canción "I Know", el 11 de abril de 1992.
+            El kpop, más que ser música, incluye coreografías complejas y sincronizadas, conceptos visuales cinematográficos y un estricto sistema de entrenamiento para formar a los artistas, conocidos como idols.
+        </p>
+
+    </article>
+
+
+    <article>
+
+        <h2 class="grupo" id="grupos">Grupos de K-pop</h2>
+
+        <p>
+            Los grupos que encontraras en esta enciclopedia son:
+        </p>
+
+        <ul>
+
+            <li><a href="#bts">BTS</a></li>
+
+            <li><a href="#blackpink">BLACKPINK</a></li>
+
+            <li><a href="#twice">TWICE</a></li>
+
+            <li><a href="#enhypen">ENHYPEN</a></li>
+
+            <li><a href="#straykids">STRAY KIDS</a></li>
+
+        </ul>
+
+        <p class="destacado">Conoce más sobre tus grupos favoritos:</p>
+
+<ul>
+    <li>
+        <a class="btn btn-outline-dark btn-sm" href="https://ibighit.com" target="_blank">
+            Página oficial de BTS
+        </a>
+    </li>
+
+    <li>
+        <a class="btn btn-outline-dark btn-sm" href="https://blackpinkmusic.com" target="_blank">
+            Página oficial de BLACKPINK
+        </a>
+    </li>
+
+    <li>
+        <a class="btn btn-outline-dark btn-sm" href="https://jype.com" target="_blank">
+            Página oficial de TWICE
+        </a>
+    </li>
+
+     <li>
+        <a class="btn btn-outline-dark btn-sm" href="https://weverse.io" target="_blank">
+            Página oficial de ENHYPEN
+        </a>
+    </li>
+
+    <li>
+        <a class="btn btn-outline-dark btn-sm" href="https://jype.com" target="_blank">
+            Página oficial de Stray Kids
+        </a>
+    </li>
+
+</ul>
+
+    </article>
+
+
+    <article>
+
+    <h2 id="tabla">Tabla de información sobre los grupos</h2>
+
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>Grupo</th>
+        <th>Fecha de debut</th>
+        <th>Cantidad de integrantes</th>
+    </tr>
+
+    <tr>
+        <td>BTS</td>
+        <td>13 de junio del 2013</td>
+        <td>7</td>
+    </tr>
+
+    <tr>
+        <td>BLACKPINK</td>
+        <td>8 de agosto del 2016</td>
+        <td>4</td>
+    </tr>
+
+    <tr>
+        <td>TWICE</td>
+        <td>20 de octubre del 2015</td>
+        <td>9</td>
+    </tr>
+
+    <tr>
+        <td>ENHYPEN</td>
+        <td>30 de noviembre del 2020</td>
+        <td>7</td>
+    </tr>
+
+    <tr>
+        <td>STRAY KIDS</td>
+        <td>25 de marzo del 2018</td>
+        <td>8</td>
+    </tr>
+</table>
+
+    </article>
+
+
+    <article>
+
+        <h2 id="bts">BTS <span class="badge bg-secondary">7 integrantes</span></h2>
+
+        <p>
+            BTS es un grupo de K-pop que debutó el 13 de junio del 2013. Está conformado por siete integrantes surcoreanos:
+            RM (Kim Namjoon), quien es el líder del grupo, Jin (Kim Seokjin), SUGA (Min Yoongi), j-hope (Jung Hoseok), Jimin (Park Jimin), V (Kim Taehyung) y Jungkook (Jeon Jeonguk).
+        </p>
+
+    </article>
+
+
+    <article>
+
+        <h2 id="blackpink">BLACKPINK <span class="badge bg-secondary">4 integrantes</span></h2>
+
+        <p>
+            BLACKPINK es un grupo de K-pop que debutó el 8 de agosto del 2016. Está conformado por cuatro integrantes, dos surcoreanas, una neozelandesa y una tailandesa:
+            Jisoo (Kim Jisoo), Jennie (Kim Jennie), Rosé (Park Chaeyoung) y Lisa (Pranpiya Manobal). Este grupo no tiene líder.
+        </p>
+
+    </article>
+
+
+    <article>
+
+        <h2 id="twice">TWICE <span class="badge bg-secondary">9 integrantes</span></h2>
+
+        <p>
+            TWICE es un grupo de K-pop que debutó el 20 de octubre del 2015. Está conformado por nueve integrantes, cinco surcoreanas, tres japonesas, y una taiwanesa:
+            Nayeon (Im Nayeon), Jeongyeon (Yoo Jeongyeon), Momo (Hirai Momo), Sana (Minatozaki Sana), Jihyo (Park Jihyo), quien es la líder del grupo, Mina (Mina Sharon Myoi), Dahyun (Kim Dahyun), Chaeyoung (Son Chaeyoung) y Tzuyu (Chou Tzuyu).
+        </p>
+
+    </article>
+
+
+    <article>
+
+        <h2 id="enhypen">ENHYPEN <span class="badge bg-secondary">7 integrantes</span></h2>
+
+        <p>
+            ENHYPEN es un grupo de K-pop que debutó el 30 de noviembre del 2020. Está formado por siete integrantes, cuatro surcoreanos, un estadounidense, un australiano y un japonés:
+            Jungwon (Yang Jungwon), quien es el líder, Heeseung (Lee Heeseung), Jay (Park Jongseong), Jake (Sim Jaeyun), Sunghoon (Park Sunghoon), Sunoo (Kim Seonwoo) y Ni-ki (Nishimura Riki).
+        </p>
+
+    </article>
+
+
+    <article>
+
+        <h2 id="straykids">STRAY KIDS <span class="badge bg-secondary">8 integrantes</span></h2>
+
+        <p>
+            Stray Kids es un grupo de K-pop que debutó el 25 de marzo del 2018. Está conformado por ocho integrantes, seis surcoreanos y dos australianos:
+            Bang Chan (Christopher Chahn Bahng), quien es el líder, Lee Know (Lee Minho), Changbin (Seo Changbin), Hyunjin (Hwang Hyunjin), Han (Han Jisung), Felix (Lee Yongbok), Seungmin (Kim Seungmin) e I.N (Yang Jeongin).
+        </p>
+
+    </article>
+
+
+</section>
+
+
+<aside>
+
+    <h2>¿De qué trata este sitio web?</h2>
+
+    <img src="autor.jpg">
+
+    <p>
+        Esta página fue creada como un proyecto de Tecnología de grado 10°
+        y está dedicada a brindar información a cerca del mundo del K-pop.
+    </p>
+
+</aside>
+
+</div>
+
+
+<footer>
+
+    <p>Nombre de la autora: Isabel Sofia Olier Paillier</p>
+
+    <p>Contacto: 3013154592</p>
+
+    <p>Correo electrónico: kpop.encyclopedia@gmail.com</p>
+
+    <p>Institución: Skolmi</p>
+
+</footer>
+
+
+</body>
+ 
+</html>
+
